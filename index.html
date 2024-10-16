@@ -4,57 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/primericono.ico">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Mi primer página web</title>
     
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <!--Define el encabezado de una página o sección. Contiene elementos como logotipos, títulos y menús de navegación-->
-        <img src="./imagenes/img fondo.jpg" alt="imagen de fondo" width="device-width" height="device-height">
+        <img src="./imagenes/img fondo.jpg" class="fondo" alt="imagen de fondo" width="100" alt="imagen de fondo de bosque">
         <h1><strong>Brispon</strong></h1>
-        <h2>Bienvenido / Welcome</h2>
     </header>
+
     <nav>
         <!--Representa una sección de navegación con enlaces a otras partes de la página o a diferentes páginas-->
         <ul>
-            <li>Inicio</li>
-            <li>Productos</li>
-            <li>Contacto</li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
     <main>
         <!--Contiene el contenido principal del documento, es único y esencial para la página-->
-        <p>Escribir acá una introducción o presentación a la página, utilizar <strong>así</strong>, <em>así</em> y <s>así</s> según
+        <section>
+            <p>Escribir acá una introducción o presentación a la página, utilizar <strong>así</strong>, <em>así</em> y <s>así</s> según
             sea necesario</p>
-        <p>¡Encontrá los mejores artículos para vos y tu hogar!</p>
+            <p><strong>¡Encontrá los mejores artículos para vos y tu hogar!</strong></p>
+        </section>
 
         <section>
             <img src="./imagenes/img_bazar.jpg" height="200" width="400" alt="imagen 1 del bazar"><br><br>
+        
+
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/U12EMj_SW_0?cc_load_policy=1" title="BAZAR CHINO 😉10 COSAS QUE MERECE COMPRAR EN UN BAZAR CHINO😱" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
         </section>
+            
+        <section>
+            <p class="parrafo-verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum voluptate iusto debitis ex possimus veniam tempore quis est dolorum nulla, tenetur quidem labore esse itaque maxime repudiandae voluptates ratione.</p>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
 
-        <iframe width="400" height="200" src="https://www.youtube.com/embed/U12EMj_SW_0?cc_load_policy=1" title="BAZAR CHINO 😉10 COSAS QUE MERECE COMPRAR EN UN BAZAR CHINO😱" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+            <p class="parrafo-verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, totam. Quaerat mollitia labore cupiditate molestiae veniam atque. Harum natus quidem sequi, assumenda, quae quis illum corporis accusantium, et maxime temporibus.</p>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26267.180604220022!2d-58.41964754999999!3d-34.619392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1728136933810!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3 class="parrafo-verde">Dejanos tus consulta</h3>
 
-        <form action="https://formspree.io/f/xbljreoo" method="POST">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"><br>
+            <form action="https://formspree.io/f/xbljreoo" method="POST">
+                <fieldset>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre"><br>
 
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" name="email" id="email" placeholder="Escribe tu email"><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" name="email" id="email" required placeholder="Escribe tu email"><br>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea name="mensaje" id="mensaje" rows="4" cols="50" required placeholder="Escribe tu mensaje"></textarea><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" rows="4" cols="50" required placeholder="Escribe tu mensaje"></textarea><br>
 
-            <button type="submit">Enviar</button><br>
-        </form>
+                <button type="submit">Enviar</button><br>
+                <button type="reset">Borrar</button>
+                </fieldset>
+            </form>
+
+            <h3>Visitanos</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26267.180604220022!2d-58.41964754999999!3d-34.619392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1728136933810!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h3>Escribinos</h3>
+            <ul>
+                <li><a href="mailto:brispon@gmail.com" target="_blank">E-mail</a></li>
+                <li><a href="https://wa.me/11553322335" target="_blank">Whatsapp</a></li>
+            </ul>
+            <footer id="seccion-contacto-footer">
+
+            </footer>
+        </section>
     </main>
 
     <footer>
         <!--Pie de página, generalmente se encuentran derechos de autor, enlaces adicionales y contactos-->
-        <p>Escribir un párrafo de contacto o formulario</p>
+        <h4>Seguinos en nuestras redes</h4>
+        <ul>
+            <li><a href="https://www.instagram.com/brispon.bazar" target="_blank">Instagram</a></li>
+            <li><a href="https://brispon-bazar.com.ar" target="_blank">Sitio web</a></li>
+        </ul>
 
-        
+        <p>2024 Mi sitio Web. Todos los derechos reservados.</p>
 
     </footer>
     
