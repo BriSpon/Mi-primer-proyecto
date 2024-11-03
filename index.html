@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/primericono.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f92ceb5cd.js" crossorigin="anonymous"></script>
+    <title>Mi primer página web</title>
+
+</head>
+<body>
+    <header id="inicio">
+        <!--Define el encabezado de una página o sección. Contiene elementos como logotipos, títulos y menús de navegación-->
+        <img src="./imagenes/img fondo.jpg" class="banner" alt="imagen de fondo" width="100" alt="imagen de fondo de bosque">
+        <h1><strong>Lang Pro</strong></h1>
+    </header>
+
+    <nav>
+        <!--Representa una sección de navegación con enlaces a otras partes de la página o a diferentes páginas-->
+        <ul>
+            
+            <li><a href="#inicio" class="enlace"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="#cursos" class="enlace"><i class="fa-solid fa-pen-nib"></i> Cursos</a></li>
+            <li><a href="#contacto" class="enlace"><i class="fa-solid fa-phone"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--Contiene el contenido principal del documento, es único y esencial para la página-->
+        <section>
+            <p><strong>Cursos de idiomas online</strong></p>
+            <p><strong>¡Aprendé donde quieras y cuando quieras!</strong></p>
+        </section>
+
+        <section class="presentacion">
+            <div class="pres_img">
+                <img src="./imagenes/img1.png" height="200" width="400" alt="imagen de gente aprendiendo">
+            </div>
+            <div class="pres_video">
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/s7OfMG7ccPE" title="¿Qué pasa en tu CEREBRO cuando aprendes IDIOMAS?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="cursos">
+            <div class="curso">
+                <img src="./imagenes/bandera_inglesa.png" height="100" width="200" alt="imagen de bandera inglesa">
+                <h2>Inglés</h2>
+                <a href=""></a>
+            </div>
+
+            <div class="curso">
+                <img src="./imagenes/bandera_alemana.png" height="100" width="200" alt="imagen de bandera alemana">
+                <h2>Alemán</h2>
+                <a href=""></a>
+            </div>
+
+            <div class="curso">
+                <img src="./imagenes/bandera_francesa.png" height="100" width="200" alt="imagen de bandera francesa">
+                <h2>Francés</h2>
+                <a href=""></a>
+            </div>
+
+            <div class="curso">
+                <img src="./imagenes/bandera_italiana.png" height="100" width="150" alt="imagen de bandera italiana">
+                <h2>Italiano</h2>
+                <a href=""></a>
+            </div>
+        </section>
+            
+        <section>
+            <p class="parrafo-verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum voluptate iusto debitis ex possimus veniam tempore quis est dolorum nulla, tenetur quidem labore esse itaque maxime repudiandae voluptates ratione.</p>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p class="parrafo-verde">¡No dudes en anotarte a ese curso que estuviste posponiendo!</p>
+
+            <h3 class="parrafo-verde">Dejanos tus consulta</h3>
+
+            <form action="https://formspree.io/f/xbljreoo" method="POST">
+                <fieldset>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre"><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" name="email" id="email" required placeholder="Escribe tu email"><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" rows="4" cols="50" required placeholder="Escribe tu mensaje"></textarea><br>
+
+                <button type="submit">Enviar</button><br>
+                <button type="reset">Borrar</button>
+                </fieldset>
+            </form>
+
+            <h3>Visitanos</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26267.180604220022!2d-58.41964754999999!3d-34.619392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1728136933810!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h3>Escribinos</h3>
+            <ul>
+                <li><a href="mailto:brispon@gmail.com" target="_blank">E-mail</a></li>
+                <li><a href="https://wa.me/11553322335" target="_blank">Whatsapp</a></li>
+            </ul>
+            <footer id="seccion-contacto-footer">
+
+            </footer>
+        </section>
+        <section>
+            <h2>Reseñas de clientes</h2>
+            <div class="reseñas">
+                <div class="card">
+                    <h2>Curso de Inglés</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore beatae voluptate illum in ratione laudantium iure aliquid. Obcaecati quos nesciunt adipisci quae dicta soluta tenetur in aliquid, odio laborum ut.</p><br>
+                    <cite>Jorge Rodriguez</cite>
+                </div>
+                <div class="card">
+                    <h2>Curso de Alemán</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore beatae voluptate illum in ratione laudantium iure aliquid. Obcaecati quos nesciunt adipisci quae dicta soluta tenetur in aliquid, odio laborum ut.</p><br>
+                    <cite>Camila Lopez</cite>
+                </div>
+                <div class="card">
+                    <h2>Curso de Francés</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore beatae voluptate illum in ratione laudantium iure aliquid. Obcaecati quos nesciunt adipisci quae dicta soluta tenetur in aliquid, odio laborum ut.</p><br>
+                    <cite>Juan D'ellia</cite>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <!--Pie de página, generalmente se encuentran derechos de autor, enlaces adicionales y contactos-->
+        <h4>Seguinos en nuestras redes</h4>
+        <ul>
+            <li><a href="https://www.instagram.com/lang_pro" target="_blank">Instagram</a></li>
+            <li><a href="https://lang-pro.com.ar" target="_blank">Sitio web</a></li>
+        </ul>
+
+        <p>2024 Mi sitio Web. Todos los derechos reservados.</p>
+
+    </footer>
+    
+</body>
+</html>
